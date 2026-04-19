@@ -1,4 +1,4 @@
-MITM Attack Simulation in C++
+
 📌 Project Overview
 
 This project demonstrates a Man-in-the-Middle (MITM) attack using C++ and TCP socket programming. It simulates communication between a client and a server where an attacker intercepts and modifies messages. The project also implements a basic encryption mechanism to demonstrate how secure communication can prevent such attacks.
