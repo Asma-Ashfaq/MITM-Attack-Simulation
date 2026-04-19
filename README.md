@@ -1,14 +1,14 @@
 MITM Attack Simulation in C++
- Project Overview
+📌 Project Overview
 
 This project demonstrates a Man-in-the-Middle (MITM) attack using C++ and TCP socket programming. It simulates communication between a client and a server where an attacker intercepts and modifies messages. The project also implements a basic encryption mechanism to demonstrate how secure communication can prevent such attacks.
 
- Objectives
+🎯 Objectives
 Simulate a MITM attack in a controlled environment
 Show how an attacker can intercept and modify messages
 Demonstrate prevention using encryption
 Understand network security vulnerabilities
- What is MITM Attack?
+🧠 What is MITM Attack?
 
 A Man-in-the-Middle attack occurs when an attacker secretly intercepts communication between two parties and can read or alter the transmitted data.
 
@@ -18,14 +18,14 @@ C++
 TCP Socket Programming
 Winsock (Windows API)
 VS Code / Visual Studio
- Project Structure
+📁 Project Structure
 MITM-Project/
 │── client.cpp
 │── server.cpp
 │── attacker.cpp
 │── README.md
- How It Works
- Without Encryption
+🚀 How It Works
+🔴 Without Encryption
 Client sends message
 Attacker intercepts message
 Attacker modifies message
@@ -34,7 +34,7 @@ Server receives modified message
 Example:
 
 Hello → Hello [HACKED]
- With Encryption
+🔐 With Encryption
 Client encrypts message
 Attacker intercepts (cannot understand)
 Server decrypts message
@@ -78,7 +78,7 @@ This project successfully demonstrates how MITM attacks work and how encryption 
 👩‍💻 Author
 
 Asma Ashfaq
-Information Technology Undergraduate
+Information Technology Student
 
 ⭐ Note
 
