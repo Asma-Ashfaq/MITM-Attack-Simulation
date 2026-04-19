@@ -1,49 +1,77 @@
-🔐 MITM Attack Simulation in C++
-📌 Project Overview
+# 🔐 MITM Attack Simulation in C++
 
-This project demonstrates a Man-in-the-Middle (MITM) attack using C++ and TCP socket programming. It simulates communication between a client and a server where an attacker intercepts and modifies messages. The project also implements a basic encryption mechanism to demonstrate how secure communication can prevent such attacks.
+## 📌 Project Overview
+This project demonstrates a **Man-in-the-Middle (MITM) attack** using C++ and TCP socket programming. It simulates communication between a client and a server where an attacker intercepts and modifies messages. The project also implements a basic encryption mechanism to demonstrate how secure communication can prevent such attacks.
 
-🎯 Objectives
-Simulate a MITM attack in a controlled environment
-Demonstrate message interception and modification
-Implement basic encryption for prevention
-Understand network security vulnerabilities
-🧠 What is MITM Attack?
+---
 
+## 🎯 Objectives
+- Simulate a MITM attack in a controlled environment  
+- Demonstrate message interception and modification  
+- Implement basic encryption for prevention  
+- Understand network security vulnerabilities  
+
+---
+
+## 🧠 What is MITM Attack?
 A Man-in-the-Middle (MITM) attack occurs when an attacker secretly intercepts communication between two parties and can read or alter the transmitted data.
 
+
 Client → Attacker → Server
-⚙️ Technologies Used
-C++
-TCP Socket Programming
-Winsock (Windows API)
-Visual Studio / VS Code
-📁 Project Structure
+
+
+---
+
+## ⚙️ Technologies Used
+- C++  
+- TCP Socket Programming  
+- Winsock (Windows API)  
+- Visual Studio / VS Code  
+
+---
+
+## 📁 Project Structure
+
 MITM-Project/
 │── client.cpp
 │── server.cpp
 │── attacker.cpp
 │── README.md
-🚀 How It Works
-🔴 Without Encryption
-Client sends message
-Attacker intercepts message
-Attacker modifies message
-Server receives modified message
+
+
+---
+
+## 🚀 How It Works
+
+### 🔴 Without Encryption
+1. Client sends message  
+2. Attacker intercepts message  
+3. Attacker modifies message  
+4. Server receives modified message  
 
 Example:
 
 Hello → Hello [HACKED]
-🔐 With Encryption
-Client encrypts message
-Attacker intercepts encrypted data
-Server decrypts message
+
+
+---
+
+### 🔐 With Encryption
+1. Client encrypts message  
+2. Attacker intercepts encrypted data  
+3. Server decrypts message  
 
 Example:
 
 Hello → Xy@#!! → Hello
-▶️ How to Run
-🔧 Compile
+
+
+---
+
+## ▶️ How to Run
+
+### 🔧 Compile
+```bash
 g++ client.cpp -o client.exe -lws2_32
 g++ server.cpp -o server.exe -lws2_32
 g++ attacker.cpp -o attacker.exe -lws2_32
